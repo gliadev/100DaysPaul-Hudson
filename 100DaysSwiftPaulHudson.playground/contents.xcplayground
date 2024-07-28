@@ -4,6 +4,9 @@
         <page name='01 Dia'/>
         <page name='02 Dia'/>
         <page name='03 Dia'/>
-        <page name='checkPoint1'/>
+        <page name='checkPoint01'/>
+        <page name='04 Dia'/>
+        <page name='checkPoint02'/>
+        <page name='05 Dia if, swith, ternario'/>
     </pages>
 </playground>
