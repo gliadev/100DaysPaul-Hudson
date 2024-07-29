@@ -131,9 +131,9 @@ print(first < second)
 
 // Verificación de múltiples condiciones
 
-let age = 16
+let ageUno = 16
 
-if age >= 18 {
+if ageUno >= 18 {
     print("You can vote in the next election.")
 } else {
     print("Sorry, you're too young to vote.")
@@ -178,4 +178,119 @@ if transport == .airplane || transport == .helicopter {
     print("Time to get stuck in traffic.")
 } else {
     print("I'm going to hire a scooter now!")
+}
+
+
+var city = "Tokyo"
+
+if city == "Madrid" {
+    print("Failure")
+} else {
+    print("Sucess")
+}
+
+let isAvailable: Bool = false
+if isAvailable {
+    print("Success")
+} else {
+    print("Failure")
+}
+
+let employeeCount = 50
+if employeeCount == 50 {
+    print("Success")
+}
+
+// Ejemplo básico de uso de `switch`
+enum Weather {
+    case sun, rain, wind, snow, unknown
+}
+
+let forecast = Weather.sun
+
+switch forecast {
+case .sun:
+    print("It should be a nice day.")
+case .rain:
+    print("Pack an umbrella.")
+case .wind:
+    print("Wear something warm")
+case .snow:
+    print("School is cancelled.")
+case .unknown:
+    print("Our forecast generator is broken!")
+}
+
+// Uso de `switch` con `default`
+let place = "Metropolis"
+
+switch place {
+case "Gotham":
+    print("You're Batman!")
+case "Mega-City One":
+    print("You're Judge Dredd!")
+case "Wakanda":
+    print("You're Black Panther!")
+default:
+    print("Who are you?")
+}
+
+// Ejemplo de `fallthrough` en `switch`
+let day = 5
+print("My true love gave to me…")
+
+switch day {
+case 5:
+    print("5 golden rings")
+    fallthrough
+case 4:
+    print("4 calling birds")
+    fallthrough
+case 3:
+    print("3 French hens")
+    fallthrough
+case 2:
+    print("2 turtle doves")
+    fallthrough
+default:
+    print("A partridge in a pear tree")
+}
+
+// Verificación de múltiples condiciones con `&&` y `||`
+let isOwner = true
+let isEditingEnabled = true
+let isAdmin = false
+
+if (isOwner && isEditingEnabled) || isAdmin {
+    print("You can delete this post")
+}
+
+// Ejemplo básico del operador ternario
+let age3 = 18
+let canVote = age3 >= 18 ? "Yes" : "No"
+print(canVote)  // Imprime "Yes"
+
+// Ejemplo 1: Hora del día
+let hour = 23
+print(hour < 12 ? "It's before noon" : "It's after noon")
+
+// Ejemplo 2: Conteo de un Array
+let names = ["Jayne", "Kaylee", "Mal"]
+let crewCount = names.isEmpty ? "No one" : "\(names.count) people"
+print(crewCount)
+
+// Ejemplo 3: Temas
+enum Theme {
+    case light, dark
+}
+
+let theme = Theme.dark
+let background = theme == .dark ? "black" : "white"
+print(background)
+
+// Comparación con `if/else`
+if hour < 12 {
+    print("It's before noon")
+} else {
+    print("It's after noon")
 }
