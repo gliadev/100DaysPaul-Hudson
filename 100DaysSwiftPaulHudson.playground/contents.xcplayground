@@ -16,5 +16,9 @@
         <page name='09 Closure'/>
         <page name='checkPoint05'/>
         <page name='10 Struct'/>
+        <page name='11 Struct 2'/>
+        <page name='checkPoint06'/>
+        <page name='12 Classes'/>
+        <page name='checkPoint07'/>
     </pages>
 </playground>
